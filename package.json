@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:darqtom/chat-app.git",
+  "author": "darqtom <dariusztomczyszyn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node -r esm src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon -r esm src/index.js"
+  }
+}
